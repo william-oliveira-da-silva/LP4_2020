@@ -1,0 +1,6 @@
+TODA VEZ QUE ABRIR O TERMINAL:
+
+SET PATH=C:\Program Files\nodejs;%PATH% 
+npm -v
+
+npm init react-app calculadora
