@@ -2,15 +2,15 @@
     margin-right: 8px;
 }
 
-.markedAsDone {
+.markedAsDone{
     text-decoration: line-through;
     color: red;
 }
 
-.tableActions {
+.tableActions{
     width: 110px;
 }
 
-.todoForm {
+.todoForm{
     padding-bottom: 50px;
 }

@@ -54,7 +54,7 @@
       "examples": [
         {
           "title": "Success",
-          "content": "    HTTP/1.1 200 OK\n    [{\n     \"id\": 1,\n     \"title\": \"Study\",\n     \"done\": false,\n     \"updated_at\": \"2016-02-10T15:46:51.778Z\",\n     \"createt_at\": \"2016-02-10T15:46:51.778Z\"\n     }]\nHTTP/1.1 200 OK",
+          "content": "    HTTP/1.1 200 OK\n    [{\n     \"id\": 1,\n     \"title\": \"Study\",\n     \"done\": false,\n     \"updated_at\": \"2019-02-10T15:46:51.778Z\",\n     \"createt_at\": \"2019-02-10T15:46:51.778Z\"\n     }]\nHTTP/1.1 200 OK",
           "type": "json"
         }
       ]

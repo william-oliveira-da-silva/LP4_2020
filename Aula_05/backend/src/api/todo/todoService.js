@@ -15,8 +15,8 @@ const Todo = require('./todo');
  *      "id": 1,
  *      "title": "Study",
  *      "done": false,
- *      "updated_at": "2016-02-10T15:46:51.778Z",
- *      "createt_at": "2016-02-10T15:46:51.778Z"
+ *      "updated_at": "2019-02-10T15:46:51.778Z",
+ *      "createt_at": "2019-02-10T15:46:51.778Z"
  *      }]
  * HTTP/1.1 200 OK
  * @apiErrorExample {json} List error

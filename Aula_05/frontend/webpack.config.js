@@ -4,7 +4,7 @@ const ExtactTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry: './src/index.jsx',
     output: {
-        path: __dirname + 'public', //plubic
+        path: __dirname + 'public',
         filename: './app.js'
     },
     devServer: {
@@ -22,7 +22,7 @@ module.exports = {
     ],
     module: {
         loaders: [{
-            test: /.js[x]?$/,  //expressão regular
+            test: /.js[x]?$/, 
             loader: 'babel-loader',
             exclude: /node_modules/,
             query: {
