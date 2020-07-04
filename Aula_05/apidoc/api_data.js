@@ -54,7 +54,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success",
-          "content": "    HTTP/1.1 200 OK\n    [{\n     \"id\": 1,\n     \"title\": \"Study\",\n     \"done\": false,\n     \"updated_at\": \"2019-02-10T15:46:51.778Z\",\n     \"createt_at\": \"2019-02-10T15:46:51.778Z\"\n     }]\nHTTP/1.1 200 OK",
+          "content": "    HTTP/1.1 200 OK\n    [{\n     \"id\": 1,\n     \"title\": \"will\",\n     \"done\": false,\n     \"updated_at\": \"2019-02-10T15:46:51.778Z\",\n     \"createt_at\": \"2019-02-10T15:46:51.778Z\"\n     }]\nHTTP/1.1 200 OK",
           "type": "json"
         }
       ]
@@ -79,10 +79,28 @@ define({ "api": [
     "title": "Change a tasks",
     "group": "Tasks",
     "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Boolean",
+            "optional": false,
+            "field": "tasks.done",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "tasks.title",
+            "description": "<p>Task title</p>"
+          }
+        ]
+      },
       "examples": [
         {
           "title": "Success",
-          "content": "HTTP/1.1 200 OK\n[{\n \"title\": \"Study\",\n \"done\": true\n }]",
+          "content": "HTTP/1.1 200 OK\n[{\n \"title\": \"will\",\n \"done\": true\n }]",
           "type": "json"
         }
       ]

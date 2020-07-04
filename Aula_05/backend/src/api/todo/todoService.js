@@ -13,7 +13,7 @@ const Todo = require('./todo');
  *     HTTP/1.1 200 OK
  *     [{
  *      "id": 1,
- *      "title": "Study",
+ *      "title": "will",
  *      "done": false,
  *      "updated_at": "2019-02-10T15:46:51.778Z",
  *      "createt_at": "2019-02-10T15:46:51.778Z"
@@ -25,10 +25,12 @@ const Todo = require('./todo');
 /**
  * @api {put} /tasks/:id Change a tasks
  * @apiGroup Tasks
+ * @apiSuccess {Boolean} tasks.done 
+ * @apiSuccess {String} tasks.title Task title
  * @apiSuccessExample {json} Success
  *     HTTP/1.1 200 OK
  *     [{
- *      "title": "Study",
+ *      "title": "will",
  *      "done": true
  *      }]
  * @apiErrorExample {json} Error
