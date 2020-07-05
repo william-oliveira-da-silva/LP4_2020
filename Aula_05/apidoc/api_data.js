@@ -74,9 +74,76 @@ define({ "api": [
     "name": "GetTasks"
   },
   {
+    "type": "post",
+    "url": "/tasks",
+    "title": "List all tasks",
+    "group": "Tasks",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "tasks",
+            "description": "<p>Task's list</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "tasks.id",
+            "description": "<p>Task id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "tasks.title",
+            "description": "<p>Task title</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Boolean",
+            "optional": false,
+            "field": "tasks.done",
+            "description": "<p>Task is done?</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "tasks.created_at",
+            "description": "<p>Register's date</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success",
+          "content": "HTTP/1.1 200 OK\n[{\n \"id\": 3,\n \"title\": \"will 2\",\n \"done\": false,\n \"createt_at\": \"2019-02-10T15:46:51.778Z\"\n }]",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "List error",
+          "content": "HTTP/1.1 500 Internal Server Error",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "backend/src/api/todo/todoService.js",
+    "groupTitle": "Tasks",
+    "name": "PostTasks"
+  },
+  {
     "type": "put",
     "url": "/tasks/:id",
-    "title": "Change a tasks",
+    "title": "",
     "group": "Tasks",
     "success": {
       "fields": {
@@ -93,7 +160,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "tasks.title",
-            "description": "<p>Task title</p>"
+            "description": ""
           }
         ]
       },
